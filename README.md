@@ -10,8 +10,18 @@ Java8をインストールしておいてください。
 
 ```
 ./activator
-> run
+> runMain <実行したいクラス>
 ```
+
+## サンプル一覧
+
+<!--begin-->
+ クラス | 説明 | 実行コマンド
+-------|------|----------
+AkkaActorExample | Actorにメッセージを送信するシンプルな例 | `runMain playground.AkkaActorExample` 
+HelloWorld | Hello Worldを出力するだけのサンプル | `runMain playground.HelloWorld` 
+
+<!--end-->
 
 ## ライセンス
 
