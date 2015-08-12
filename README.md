@@ -16,10 +16,10 @@ Java8をインストールしておいてください。
 ## サンプル一覧
 
 <!--begin-->
- クラス | 説明 | 実行コマンド
--------|------|----------
-AkkaActorExample | Actorにメッセージを送信するシンプルな例 | `runMain playground.AkkaActorExample` 
-HelloWorld | Hello Worldを出力するだけのサンプル | `runMain playground.HelloWorld` 
+ クラス | 説明と実行コマンド
+-------|----------------
+AkkaActorExample | Actorにメッセージを送信するシンプルな例 <br> `runMain playground.AkkaActorExample` 
+HelloWorld | Hello Worldを出力するだけのサンプル <br> `runMain playground.HelloWorld` 
 
 <!--end-->
 
