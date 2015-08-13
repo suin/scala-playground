@@ -25,6 +25,7 @@ Java8をインストールしておいてください。
 [`actor.example5.TimeoutAsk`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example5/TimeoutAsk.scala) | アクターのaskでタイムアウトを超過した場合どうなるかを試せるサンプル <br> `runMain playground.actor.example5.TimeoutAsk` 
 [`actor.example6.UnknownMessage`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example6/UnknownMessage.scala) | もしアクターが未知のメッセージを受信したらどうなるか？ <br> `runMain playground.actor.example6.UnknownMessage` 
 [`basic.HelloWorld`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/HelloWorld.scala) | Hello Worldを出力するだけのサンプル <br> `runMain playground.basic.HelloWorld` 
+[`basic.WhatIsSuspiciousShadowing`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/WhatIsSuspiciousShadowing.scala) | suspicious shadowingについて <br> `runMain playground.basic.WhatIsSuspiciousShadowing` 
 
 <!--end-->
 
