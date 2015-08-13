@@ -18,9 +18,9 @@ Java8をインストールしておいてください。
 <!--begin-->
  クラス | 説明と実行コマンド
 -------|----------------
-`playground.actor.example1.SimpleExample` | Actorにメッセージを送信するシンプルな例 <br> `runMain playground.actor.example1.SimpleExample` 
-`playground.actor.example2.ChatModelExample` | チャットを例に集約ルートのActorを実行時に生成する方法 <br> `runMain playground.actor.example2.ChatModelExample` 
-`playground.basic.HelloWorld` | Hello Worldを出力するだけのサンプル <br> `runMain playground.basic.HelloWorld` 
+`actor.example1.SimpleExample` | Actorにメッセージを送信するシンプルな例 <br> `runMain playground.actor.example1.SimpleExample` 
+`actor.example2.ChatModelExample` | チャットを例に集約ルートのActorを実行時に生成する方法 <br> `runMain playground.actor.example2.ChatModelExample` 
+`basic.HelloWorld` | Hello Worldを出力するだけのサンプル <br> `runMain playground.basic.HelloWorld` 
 
 <!--end-->
 

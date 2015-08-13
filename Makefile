@@ -10,7 +10,8 @@ readme:
 		filename=$${file%.*}; \
 		classname=$${filename////.}; \
 		command=$$(echo runMain $$classname); \
-		echo "\`$$classname\` | $$description <br> \`$$command\` " >> $(TMP_FILE); \
+		shortclassname=$${classname#*.} ;\
+		echo "\`$$shortclassname\` | $$description <br> \`$$command\` " >> $(TMP_FILE); \
 	done
 	@content=$$(cat $(TMP_FILE) | php -r 'echo preg_replace("/<!--begin-->.+<!--end-->/s", "<!--begin-->\n" . file_get_contents("php://stdin") . "\n<!--end-->", file_get_contents("README.md"));'); \
 	echo "$$content" > README.md
