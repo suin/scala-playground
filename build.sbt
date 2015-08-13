@@ -19,6 +19,7 @@ scalacOptions := Seq(
   "-encoding", "utf8",
   "-feature",
   "-language:higherKinds",
+  "-language:postfixOps",
   "-unchecked",
   "-Xlint",
   "-Xfatal-warnings",

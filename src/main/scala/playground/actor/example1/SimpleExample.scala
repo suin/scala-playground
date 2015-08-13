@@ -1,6 +1,6 @@
 // Actorにメッセージを送信するシンプルな例
 
-package playground
+package playground.actor.example1
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 
@@ -22,7 +22,7 @@ class MessageActor extends Actor {
   }
 }
 
-object AkkaActorExample extends App {
+object SimpleExample extends App {
 
   // アクターシステムを作ります。
   val system: ActorSystem = ActorSystem("my-actor-system")
