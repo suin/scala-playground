@@ -1,4 +1,5 @@
-// suspicious shadowingについて
+// 安定識別子パターン (Stable Identifier Patterns)
+// 詳しくは http://www29.atwiki.jp/tmiya/pages/109.html の「8.1.5 安定識別子パターン (Stable Identifier Patterns)」を参照。
 
 package playground.basic
 
