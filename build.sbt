@@ -28,3 +28,12 @@ scalacOptions := Seq(
   "-Ywarn-unused",
   "-Ywarn-unused-import"
 )
+
+// Scalariform settings
+import scalariform.formatter.preferences._
+
+scalariformSettings
+
+ScalariformKeys.preferences := ScalariformKeys.preferences.value
+  .setPreference(AlignSingleLineCaseStatements, true)
+  .setPreference(PreserveDanglingCloseParenthesis, true)

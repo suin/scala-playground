@@ -2,7 +2,7 @@
 
 package playground.actor.example3
 
-import akka.actor.{Props, ActorSystem, Actor, ActorLogging}
+import akka.actor.{ Props, ActorSystem, Actor, ActorLogging }
 
 // `ActorLogging`をインポートすることで`log` APIが追加される
 class MyActor extends Actor with ActorLogging {

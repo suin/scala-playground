@@ -2,7 +2,7 @@
 
 package playground.actor.example1
 
-import akka.actor.{Actor, ActorRef, ActorSystem, Props}
+import akka.actor.{ Actor, ActorRef, ActorSystem, Props }
 
 // アクターとやりとりするためのプロトコルを定義します。
 object ActorProtocol {

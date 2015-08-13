@@ -9,7 +9,7 @@ import akka.util.Timeout
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.concurrent.duration._
-import scala.util.{Failure, Success}
+import scala.util.{ Failure, Success }
 
 object ChatRoomProtocol {
   case class Join(username: String)
@@ -55,7 +55,7 @@ class ChatRoomManager extends Actor with ActorLogging {
   private var chatRooms = Map.empty[String, ActorRef]
 
   override def receive: Actor.Receive = {
-    case OpenChatRoom(roomId) => 
+    case OpenChatRoom(roomId) =>
       log.info(s"Opening new chat room: roomId = $roomId")
       val chatRoom = context.actorOf(ChatRoom.open(roomId), roomId)
       chatRooms = chatRooms + (roomId -> chatRoom)
