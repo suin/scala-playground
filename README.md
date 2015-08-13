@@ -22,6 +22,7 @@ Java8をインストールしておいてください。
 [`actor.example2.ChatModelExample`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example2/ChatModelExample.scala) | チャットを例に集約ルートのActorを実行時に生成する方法 <br> `runMain playground.actor.example2.ChatModelExample` 
 [`actor.example3.ActorLoggingExample`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example3/ActorLoggingExample.scala) | アクターでログを出力する方法 <br> `runMain playground.actor.example3.ActorLoggingExample` 
 [`actor.example4.ChatModelExample2`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example4/ChatModelExample2.scala) | ChatModelExampleに表明を加えたバージョンです <br> `runMain playground.actor.example4.ChatModelExample2` 
+[`actor.example5.TimeoutAsk`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example5/TimeoutAsk.scala) | アクターのaskでタイムアウトを超過した場合どうなるかを試せるサンプル <br> `runMain playground.actor.example5.TimeoutAsk` 
 [`basic.HelloWorld`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/HelloWorld.scala) | Hello Worldを出力するだけのサンプル <br> `runMain playground.basic.HelloWorld` 
 
 <!--end-->
