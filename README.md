@@ -24,6 +24,7 @@ Java8をインストールしておいてください。
 [`actor.example4.ChatModelExample2`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example4/ChatModelExample2.scala) | ChatModelExampleに表明を加えたバージョンです <br> `runMain playground.actor.example4.ChatModelExample2` 
 [`actor.example5.TimeoutAsk`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example5/TimeoutAsk.scala) | アクターのaskでタイムアウトを超過した場合どうなるかを試せるサンプル <br> `runMain playground.actor.example5.TimeoutAsk` 
 [`actor.example6.UnknownMessage`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example6/UnknownMessage.scala) | もしアクターが未知のメッセージを受信したらどうなるか？ <br> `runMain playground.actor.example6.UnknownMessage` 
+[`actor.example7.WatchDeathOfActors`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/actor/example7/WatchDeathOfActors.scala) | 子アクターが死んだら通知を受け取る例 <br> `runMain playground.actor.example7.WatchDeathOfActors` 
 [`basic.HelloWorld`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/HelloWorld.scala) | Hello Worldを出力するだけのサンプル <br> `runMain playground.basic.HelloWorld` 
 [`basic.WhatIsSuspiciousShadowing`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/WhatIsSuspiciousShadowing.scala) | 安定識別子パターン (Stable Identifier Patterns) <br> `runMain playground.basic.WhatIsSuspiciousShadowing` 
 
