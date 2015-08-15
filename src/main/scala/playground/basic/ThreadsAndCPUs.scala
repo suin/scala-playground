@@ -1,9 +1,9 @@
 // ScalaがデフォルトでCPUの数しかスレッドを作らないことを確認できるサンプル
 package playground.basic
 
+import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
 import scala.concurrent.{ Await, Future }
-import scala.concurrent.ExecutionContext.Implicits.global
 
 object ThreadsAndCPUs extends App {
   val cpus = Runtime.getRuntime.availableProcessors
@@ -56,3 +56,6 @@ object ThreadsAndCPUs extends App {
 // 作るスレッド数 = 32
 // かかった時間: 4秒
 // ---------------------------------------
+
+// ちなみに ./activator -Dscala.concurrent.context.maxThreads=1
+// のように起動するとスレッド数を少なくすることができます。
