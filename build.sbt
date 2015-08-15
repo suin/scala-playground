@@ -9,6 +9,12 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.3.12"
 )
 
+// Date time libraries
+libraryDependencies ++= Seq(
+  "joda-time" % "joda-time" % "2.8.1",
+  "org.joda" % "joda-convert" % "1.7"
+)
+
 // Test libraries
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.4" % "test"
