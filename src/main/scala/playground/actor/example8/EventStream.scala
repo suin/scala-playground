@@ -23,7 +23,7 @@ class Subscriber extends Actor with ActorLogging {
     case Image(filename) =>
       log.info("Received image: {}", filename)
     case any @ _ =>
-    //      log.warning("Unknown message: {}", any)
+      log.warning("Unknown message: {}", any)
   }
 
   override def preStart(): Unit = {
@@ -53,9 +53,11 @@ object EventStream extends App {
   publisher ! Publish(Image("smile.png"))
   Thread.sleep(10L)
 
+  // Subscriberが死ぬと、PublisherのSubscriberリストから除外される
   subscriber ! PoisonPill
   Thread.sleep(10L)
 
+  // これはSubscriberに届かず、デッドレターにもならない(デッドレターはタイミング次第でなる場合がある)
   publisher ! Publish(Text("Hello again"))
   Thread.sleep(10L)
 
