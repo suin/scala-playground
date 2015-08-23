@@ -9,6 +9,12 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.3.12"
 )
 
+// Spray: A suite of scala libraries for building and consuming RESTful web services on top of Akka
+libraryDependencies ++= Seq(
+  "io.spray" %%  "spray-can" % "1.3.3",
+  "io.spray" %%  "spray-routing" % "1.3.3"
+)
+
 // Date time libraries
 libraryDependencies ++= Seq(
   "joda-time" % "joda-time" % "2.8.1",
