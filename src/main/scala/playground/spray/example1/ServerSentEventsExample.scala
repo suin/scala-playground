@@ -145,12 +145,17 @@ class MyHttpServiceActor extends Actor with MyHttpService {
 }
 
 trait MyHttpService extends HttpService {
-  val myRoute = get { context =>
-    // contextを受け取り、context.responderをSSEStreamerに渡す
-    actorRefFactory.actorOf(Props(
-      classOf[CurrentTimeStreamer],
-      context.responder
-    ))
+  val myRoute = get {
+    path("sse") {
+      context =>
+        // contextを受け取り、context.responderをSSEStreamerに渡す
+        actorRefFactory.actorOf(Props(
+          classOf[CurrentTimeStreamer],
+          context.responder
+        ))
+    } ~ pathSingleSlash {
+      getFromResource("playground/spray/example1/index.html")
+    } ~ getFromResourceDirectory("playground/spray/example1")
   }
 }
 
@@ -158,5 +163,6 @@ object ServerSentEventsExample extends App {
   implicit val system = ActorSystem("sse-example")
   val service = system.actorOf(Props[MyHttpServiceActor], "my-http")
   implicit val timeout = Timeout(5.seconds)
-  IO(Http) ? Http.Bind(service, interface = "localhost", port = 9000)
+  IO(Http) ? Http.Bind(service, interface = "0.0.0.0", port = 9000)
+  // http://localhost:9000 をブラウザで開くとSSEを確認できる
 }
