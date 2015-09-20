@@ -1,15 +1,14 @@
-package playground.spray.example2.directives
+package playground.spray.example2
 
 import java.util.Base64
 
 import org.scalatest.{ FreeSpec, Matchers }
-import playground.spray.example2.Base64DecodingService
 import spray.http.HttpEntity
 import spray.http.MediaTypes._
 import spray.routing.{ MalformedRequestContentRejection, UnsupportedRequestContentTypeRejection }
 import spray.testkit.ScalatestRouteTest
 
-class Base64EncodingDirectivesSpec
+class Base64SupportSpec
     extends FreeSpec
     with ScalatestRouteTest
     with Base64DecodingService
