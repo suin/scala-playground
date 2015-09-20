@@ -6,7 +6,7 @@ scalaVersion := "2.11.7"
 
 // Akka actor libraries
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-actor" % "2.3.12"
+  "com.typesafe.akka" %% "akka-actor" % "2.3.14"
 )
 
 // Spray: A suite of scala libraries for building and consuming RESTful web services on top of Akka
@@ -17,13 +17,13 @@ libraryDependencies ++= Seq(
 
 // Date time libraries
 libraryDependencies ++= Seq(
-  "joda-time" % "joda-time" % "2.8.1",
+  "joda-time" % "joda-time" % "2.8.2",
   "org.joda" % "joda-convert" % "1.7"
 )
 
 // Test libraries
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+  "org.scalatest" %% "scalatest" % "2.2.5" % "test"
 )
 
 scalacOptions := Seq(
