@@ -12,7 +12,8 @@ libraryDependencies ++= Seq(
 // Spray: A suite of scala libraries for building and consuming RESTful web services on top of Akka
 libraryDependencies ++= Seq(
   "io.spray" %%  "spray-can" % "1.3.3",
-  "io.spray" %%  "spray-routing" % "1.3.3"
+  "io.spray" %%  "spray-routing" % "1.3.3",
+  "io.spray" %% "spray-testkit" % "1.3.3" % "test"
 )
 
 // Date time libraries
@@ -45,6 +46,8 @@ scalacOptions := Seq(
 import scalariform.formatter.preferences._
 
 scalariformSettings
+
+Revolver.settings
 
 ScalariformKeys.preferences := ScalariformKeys.preferences.value
   .setPreference(AlignSingleLineCaseStatements, true)

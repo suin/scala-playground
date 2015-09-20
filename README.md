@@ -30,6 +30,7 @@ Java8をインストールしておいてください。
 [`basic.ThreadsAndCPUs`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/ThreadsAndCPUs.scala) | ScalaがデフォルトでCPUの数しかスレッドを作らないことを確認できるサンプル <br> `runMain playground.basic.ThreadsAndCPUs` 
 [`basic.WhatIsSuspiciousShadowing`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/basic/WhatIsSuspiciousShadowing.scala) | 安定識別子パターン (Stable Identifier Patterns) <br> `runMain playground.basic.WhatIsSuspiciousShadowing` 
 [`spray.example1.ServerSentEventsExample`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/spray/example1/ServerSentEventsExample.scala) | SprayでServer-Sent Eventsを実装するサンプル <br> `runMain playground.spray.example1.ServerSentEventsExample` 
+[`spray.example2.Base64DecodingServiceExample`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/spray/example2/Base64DecodingServiceExample.scala) | spray-routingでBase64エンコードされたHTTPリクエストをデコードするサンプル <br> `runMain playground.spray.example2.Base64DecodingServiceExample` 
 
 <!--end-->
 
