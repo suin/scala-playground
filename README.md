@@ -35,6 +35,7 @@ Java8をインストールしておいてください。
 [`spray.example1.ServerSentEventsExample`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/spray/example1/ServerSentEventsExample.scala) | SprayでServer-Sent Eventsを実装するサンプル <br> `runMain playground.spray.example1.ServerSentEventsExample` 
 [`spray.example2.Base64DecodingServiceExample`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/spray/example2/Base64DecodingServiceExample.scala) | spray-routingでBase64エンコードされたHTTPリクエストをデコードするサンプル <br> `runMain playground.spray.example2.Base64DecodingServiceExample` 
 [`xml.AcceptNonStringAttributes`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/xml/AcceptNonStringAttributes.scala) | XML要素の属性にString以外を使う方法 <br> `runMain playground.xml.AcceptNonStringAttributes` 
+[`xml.AddDynamicallyAttributesToXmlElement`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/xml/AddDynamicallyAttributesToXmlElement.scala) | XML要素に動的に属性を追加する <br> `runMain playground.xml.AddDynamicallyAttributesToXmlElement` 
 [`xml.XmlElementWithAnOptionalAttribute`](https://github.com/suin/scala-playground/blob/master/src/main/scala/playground/xml/XmlElementWithAnOptionalAttribute.scala) | オプショナルな属性を持つXML要素の作り方 <br> `runMain playground.xml.XmlElementWithAnOptionalAttribute` 
 
 <!--end-->
