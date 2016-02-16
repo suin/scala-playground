@@ -33,6 +33,7 @@ scalacOptions := Seq(
   "-feature",
   "-language:higherKinds",
   "-language:postfixOps",
+  "-language:implicitConversions",
   "-unchecked",
   "-Xlint",
   "-Xfatal-warnings",
